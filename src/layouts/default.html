@@ -1,0 +1,100 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <script src="https://use.fontawesome.com/00d641a760.js"></script>
+  </head>
+  <body>
+    <div class="topbar">
+        <div class="topbar-wrapper">
+        <div class="address">
+            <i class="fa fa-map-marker"></i><p>3401 Marion Ave<br>
+            Mattoon, IL 61938<br>
+            (217) 499-0822</p>
+        </div><!--/address-->
+        <div class="logo">
+            <h1><a href="#"><img src="http://sitesforchurch.s3.amazonaws.com/slice1.png" alt=""></a></h1>
+        </div><!--/logo-->
+        <div class="social-media">
+            <ul>
+              <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+              <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+              <li><a href="#"> <i class="fa fa-youtube"></i> </a></li>
+              <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
+              <li><a href="#"> <i class="fa fa-gear"></i> </a></li>
+            </ul>
+        </div><!--/social-media-->
+        </div><!--/topbar-wrapper-->
+    </div><!--/topbar-->
+    <div class="mainNavigation">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li><a href="#">Welcome</a></li>
+          <li><a href="#">About Us</a>
+              <ul class="menu secondary">
+                <li><a href="#">Our Leadership</a></li>
+                <li><a href="#">Our Beliefs</a></li>
+                <li><a href="#">The Gospel</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Ministries</a>
+            <ul class="menu secondary">
+                <li><a href="#">Patch the Pirate</a></li>
+                <li><a href="#">Youth Group</a></li>
+                <li><a href="#">Prison Ministry</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Media</a>
+            <ul class="menu secondary">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sermons</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div><!--/Main Navigation-->
+    <div class="mobileNavigation">
+        <ul class="vertical menu mainMobile" data-accordion-menu>
+          <li><a href="#">MENU</a>
+          <ul class="menu vertical nested">
+          <li><a href="#">Welcome</a></li>
+          <li><a href="#">About Us</a>
+              <ul class="menu vertical nested">
+                <li><a href="#">Our Leadership</a></li>
+                <li><a href="#">Our Beliefs</a></li>
+                <li><a href="#">The Gospel</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Ministries</a>
+            <ul class="menu vertical nested">
+                <li><a href="#">Patch the Pirate</a></li>
+                <li><a href="#">Youth Group</a></li>
+                <li><a href="#">Prison Ministry</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Media</a>
+            <ul class="menu vertical nested">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sermons</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        </li>
+        </ul>
+    </div><!--/Main Navigation-->
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> body}}
+
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+.topbar
+    width: 100%
+    background-color: $primary-color
+    height: 120px
+    .topbar-wrapper
+        display: flex
+        justify-content: space-between
+        max-width: 1200px
+        margin-left: auto
+        margin-right: auto
+        width: 90%
+        color: $secondary-color
+        font-family: $header-font-family
+        height: 120px 
+        a 
+           color: $secondary-color; 
+        .address
+            i 
+                position: absolute
+                left: 0
+                top: 3px
+            p 
+                margin-left: 25px
+                margin-bottom: 0
+            width: 20%
+            align-self: center
+            font-size: 13px            
+            position: relative
+            display: none
+            @include breakpoint(730px)
+                display: block 
+        .logo
+            width: 100%
+            @include breakpoint(730px)
+                width: 40%
+            align-self: center 
+            height: 93px
+            text-align: center
+        .social-media
+            width: 20%
+            align-self: center
+            display: none
+            @include breakpoint(730px)
+                display: block 
+            ul 
+                list-style-type: none
+                margin-left: none
+                padding-left: none
+                display: flex 
+                justify-content: space-around
+                font-size: 15px
+                li 
+                    margin-left: 20px
+                    &:first-child
+                    margin-left: none
+.mainNavigation
+    background: $success-color
+    height: 70px
+    color: $secondary-color
+    display: none  
+    @include breakpoint(730px)
+        display: block
+    
+    ul.menu.dropdown
+        list-style-type: none
+        width: 90%
+        max-width: 1200px
+        margin-left: auto
+        margin-right: auto 
+        display: flex
+        justify-content: space-around
+        height: 70px
+        align-items: center
+        li 
+            text-transform: uppercase
+            a 
+                color: $secondary-color
+                &:hover
+                    color: $white
+            ul.menu.secondary
+                li a:hover
+                    color: $primary-color
+.mobileNavigation
+    background: $success-color
+    min-height: 70px
+    font-size: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    ul.mainMobile
+        min-width: 70%
+
+    ul li a 
+        color: $secondary-color
+        text-transform: uppercase
+        &:hover
+            color: $white
+    @include breakpoint(730px)
+        display: none
+                    
